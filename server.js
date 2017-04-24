@@ -23,7 +23,7 @@
 //  });
 
   app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/mainpage.html');
+    res.sendFile(__dirname + '/mainpage.ejs');
     console.log('got a GET request');
   });
 
