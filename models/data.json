@@ -1,0 +1,7 @@
+//file: models/data.json
+{
+  "name": "Classics Website",
+  "participants": [
+    {"id": 0, "name": "Tyler", "role": "creator"}
+  ]
+};
