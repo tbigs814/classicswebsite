@@ -105,7 +105,7 @@
 
 		</div>-->
 
-
+<!--
 	     <article>
 	       <header>
 	         <h1>Justin Beaver: Ever since I learned HTML, my life has made a complete 180</h1>
@@ -120,9 +120,22 @@
 	       <q>I will probably have a song about HTML on my next album,</q> - the artist added.
 	       </p>
 	     </article>
-	   </body>
+	   -->
 
+		 <ul class="Posts">
+		       <% for(var i=0; i<posts.length; i++) {%>
+		          <li id="item<%=i%>">
+		            <input type="text" name="postName" value="<%= posts[i].postName %>" readonly>
+		          </li>
+		          <% } %>
+		        </ul>
 
+	<!--	<form action="/addPost" method="POST">
+       <input type="text" placeholder="post name" name="postName">
+       <button type="submit">Submit</button>
+		</form>-->
+
+</body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>

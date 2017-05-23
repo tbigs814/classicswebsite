@@ -17,19 +17,31 @@
 
   app.set('view engine', 'ejs');
 
+/*
+ app.get('/mainpage', (req, res)=>{
+ // obtain data from movies into cursor object
+   var cursor = db.collection(postTable).find();
+ // console.log(cursor);  // This has too much info
+ // convert to an array to extract the movie data
+  cursor.toArray(function (err, results) {
+   if (err)
+     return console.log(err);
 
-//  app.get('/mainpage', (req, res)=>{
-//    res.sendFile(__dirname + '/mainpage.html');
-//  });
+   // Render index.ejs
+   res.render('mainpage.ejs', {posts: results});
+   console.log(results)
+ });
+   //res.sendFile(__dirname + '/mainpage.ejs');
+ });*/
 
-  app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/mainpage.ejs');
+ app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/homepage.html');
     console.log('got a GET request');
   });
 
 
 
-
+/*
   // Load the module
   var modelTools = require('./models/dataTools.js');
 
@@ -45,9 +57,9 @@
       // members.participants
        res.render('team.ejs', {data: members.participants});
      });
-   });
+   });*/
 
-  app.get('/managePosts', (req, res)=>{
+app.get('/mainpage', (req, res)=>{
     // obtain data from movies into cursor object
   var cursor = db.collection(postTable).find();
   // console.log(cursor);  // This has too much info
@@ -71,7 +83,7 @@ app.post('/addPost', (req, res) => {
       return console.log(err);
     console.log('saved to database');
     updateIds();
-    res.redirect('/managePosts');
+    res.redirect('/mainpage');
   });
 });
 
