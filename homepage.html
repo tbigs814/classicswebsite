@@ -1,8 +1,13 @@
 <html>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/3.1.1/jquery-ui.min.js">
+</script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <!-- Bootstrap Core JavaScript
 <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>-->
 <!-- Plugin JavaScript -->
@@ -378,12 +383,13 @@ section h4.section-subheading {
 .carousel-caption h3{
   font-size: 70px;
   vertical-align: top;
-  padding-bottom: 50px
+  padding-bottom: 30px
 }
 
 .carousel-caption p {
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  font-size: 25px;
 }
 
 button[type="buttonpost"]{
@@ -401,7 +407,6 @@ button[type="buttonpost"]{
 button[type="buttonpost"]:hover{
   background-color: #E43A14;
 }
-
 
 .space {
   padding-bottom: 30px;
@@ -722,7 +727,22 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #FF5733;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 </style>
+
+
+
 <body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4" data-spy="scroll">
 
     <!-- Navigation -->
@@ -928,9 +948,7 @@ body {
               <div class="item active">
                 <img src="http://jrrny.com/wp-content/uploads/journeys/jahangiralam758101/9e22f2add3eca28e0b68d6b84678532d.jpg" alt="post1">
                 <div class="carousel-caption">
-
                   <h3>Important Ancient Sentiments</h3>
-
                   <p>A brief discussion of Plato Phaedrus section 274c5-275b2</p>
                   <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                     <button type="buttonpost">View</button>
@@ -945,7 +963,10 @@ body {
                 <div class="carousel-caption">
                   <h3>Venetian “Realities:” The City as Space for Imaginative Constructions</h3>
                   <p>Discussion of dissonance between 19th Venetian art and reality</p>
-                  <!--<button>Button</button>-->
+                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <button type="buttonpost">View</button>
+                  </a>
+                  <div class="space"></div>
                 </div>
               </div>
 
@@ -954,6 +975,10 @@ body {
                 <div class="carousel-caption">
                   <h3>Emperor Hadrian and Rabbi Akiba</h3>
                   <p>A discussion of the two contemporaries</p>
+                  <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <button type="buttonpost">View</button>
+                  </a>
+                  <div class="space"></div>
                 </div>
               </div>
 
@@ -1029,9 +1054,100 @@ body {
         </div>
     </section>
 
-    <!-- Clients Aside -->
 
+    <section id="blog" class="darkbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Blog Posts</h2>
+                    <!--<h3 class="section-subheading text-muted">Fifth</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Round Icons</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <!--<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">-->
+                        <div class="card">
+                            <h4>stuff</h4>
+                        </div>
+                      <!--  <img src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" class="img-responsive" alt="">
+                    </a>-->
 
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Treehouse</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Golden</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Escape</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dreams</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -1074,7 +1190,7 @@ body {
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <footer>
         <div class="container">
@@ -1117,18 +1233,18 @@ body {
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive" src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <h2>Important Ancient Sentiments, 1/24/17</h2>
+                            <p class="item-intro text-muted">Plato Phaedrus section 274c5-275b2</p>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: January 2017</li>
+                                <li>By: Giuliana</li>
                             </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <img class="img-responsive img-centered" src="http://blogs.oregonstate.edu/wr593/files/2014/02/winged-horse.png" alt="">
+                            <p> Context: Socrates is speaking to Phaedrus. There was an Egyptian god, Theuth. He invented numbers and arithmetic and geometry and astronomy, also draughts and dice, and, most important of all, letters. The king at the time was Thamus, Theuth went to Thamus to display his inventions. Of the letters, Theuth said that this invention will make the Egyptians wiser and improve their memories, saying “μνήμης τε γὰρ καὶ σοφίας φάρμακον ηὑρέθη” or, “I have found a charm for wisdom and memory.” Thamus is not convinced. He says “τοῦτο γὰρ τῶν μαθόντων λήθην μὲν ἐν ψυχαῖς παρέξει μνήμης ἀμελετησίᾳ, ἅτε διὰ πίστιν γραφῆς ἔξωθεν ὑπ᾽ ἀλλοτρίων τύπων, οὐκ ἔνδοθεν αὐτοὺς ὑφ᾽ αὑτῶν ἀναμιμνῃσκομένους: οὔκουν μνήμης ἀλλὰ ὑπομνήσεως φάρμακον ηὗρες. σοφίας δὲ τοῖς μαθηταῖς δόξαν, οὐκ ἀλήθειαν πορίζεις: πολυήκοοι γάρ σοι γενόμενοι ἄνευ διδαχῆς πολυγνώμονες εἶναι δόξουσιν, ἀγνώμονες ὡς ἐπὶ τὸ πλῆθος ὄντες, καὶ χαλεποὶ συνεῖναι, δοξόσοφοι γεγονότες ἀντὶ σοφῶν.” or, “For this invention will make forgetfulness and negligence of memory in the minds of the students/those who use it, so as through the trust in writing outside themselves by other forces, not from within themselves by their own power of remembering. You have found a charm not of memory but of reminding. You will furnish your students with the appearance of wisdom, not truth. For those having heard many things will seem to become those who have heard learned many things without teaching/instruction, when they are senseless in general and difficult to be with, seeming wise but not being wise.
+                            </p>
+                            <p>Takeaways: The appearance of wisdom vs. actual wisdom. Just because you have heard many things (πολυήκοοι) does not mean you know mean things (πολυγνώμονες). This text reveals similar cultural anxieties as we have today. The πολυήκοοι are difficult to be with (χαλεποὶ συνεῖναι). Additionally, this text reveals the concerns about adverse affects that inventions and technology may have on the mind. Theuth introduces letters (γράμματα) to Thamus. Theuth says that letters will increase the memory and wisdom of the Egyptians. However, Thamus says that he is false, for letters will make men more reliable on having knowledge written down rather than stored in their minds. In our modern age, we have available to us the internet and our iPhones are virtually every moment of the day. Theuth may say that there is no need to remember what decade George Washington was born in, as we can write it down. Thamus would lament the loss of traditional learning, as he claims that abandoning the practice of committing things to memory will decrease wisdom.</p>
+                          </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -1149,12 +1265,419 @@ body {
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>Venetian “Realities:” The City as Space for Imaginative Constructions</h2>
+                            <p class="item-intro text-muted">A look into the dissonance between 19th century Venician art and reality</p>
+                            <ul class="list-inline">
+                              <li>Date: December 2016</li>
+                              <li>By: Giuliana</li>
+
+                            <p>Venice has always attracted artists. The city has been represented on both the canvas and the page in a variety of ways, from Canaletto’s post-card Venice to Whistler’s
+                              back-alley Venice. Appearing to continue the tradition, 19th century painter John Singer Sargent and writer Mark Twain both came to the city and produced seemingly Venetian scenes. But, upon a closer look into the composition of the works, the viewer can recognize
+                              intentional aspects of imaginative constructions. Both artists staged Venetian “realities,” however these scenes are not authentic renderings of the city but rather intentionally
+                              fabricated scenes driven by deeper motives. While Sargent’s purposes for doing so are a bit more elusive than Twain’s, they both create Venetian scenes with an intent that goes far
+                              beyond a simple artistic representation of the city. By analyzing Sargent’s “A Street In Venice” and “An Interior In Venice” and Twain’s “Innocents Abroad,” this paper will
+                              investigate how and why these artists used Venice as setting for imaginative constructions that pursue more complex purposes.</p>
+                              <p>It is no secret to Sargent scholars that Venice represented more than a beautiful
+
+holiday destination to the painter. However, it is most interesting to note that Sargent’s first
+
+and arguably most notable biographer, Charteris, who published his biography just 2 years
+
+after Sargent’s death, devotes only 5 weak pages to Venice. Apparently, as time went on
+
+and scholars began to look more closely at the man behind the paintings, the true meaning of his Venice works was illuminated. Fairbrother, a more recent Sargent scholar,
+
+appropriately asserts,  “A fuller awareness of the strengths and weaknesses of Sargent’s
+
+temperament can clarify the seeming disconnectedness between his bravura art and a
+
+reticent public image” (John Singer Sargent 56). The undeniable intensity of Sargent’s
+
+Venice works can only be truly understood when the viewer considers the motivating
+
+forces of his spirit. </p>
+<p> Before looking into Sargent’s Venetian work, it is necessary to reflect on his career
+
+history as well as what we can know of his persona. Born in 1856 in Florence to American
+
+expatriate parents, Sargent began to cultivate his talent and interest in art at a young age by
+
+studying at various European institutions. He quickly became renowned for portraiture
+
+which turned out to occupy nearly 30 years of his life. As noted by nearly all of his
+
+biographers, he soon grew bored, perhaps resentful, of his portraiture career. In his 30s and
+
+40s, between portrait sessions with high profile individuals, Sargent often escaped on
+
+holiday. While he vacationed to many places, Venice is where his private pursuits reveal
+
+with great clarity the duality that existed within the artist, “To understand both the art and
+
+the artist it is necessary to see how the different, sometimes opposing, aspects of Sargent’s
+
+personality interacted” (Fairbrother, John Singer Sargent 21). First noted by Charteris,
+
+Sargent did not enjoy publicity (227). This sets up a delightful irony for the modern
+
+viewer—the man who produces artwork for the world to see is reluctant to be in the public
+
+light himself. What then is the root of this aversion to publicity? One possible explanation
+
+is that he was likely a closeted homosexual, struggling to reconcile his true feelings with
+
+the social norms of the time. </p>
+<p>During Sargent’s first Venetian period (1880-1882), he created an oil on wood
+
+painting titled “A Street In Venice” (1882) that explores his preoccupation with private
+
+moments by using elements of spatial and psychological ambiguity. Spatially, the
+
+dramatically narrowing perspective that the dark walls creates makes this outdoors scene
+
+feel like close-quartered interior, for there is only a slice of murky daylight visible at the
+
+top. This mimics the spatially ambiguous nature of Venice herself, as the city lacks clear
+
+distinction between land and water. Psychologically, the relation between the glancing man
+
+and the woman is ambiguous. From the viewer’s perspective, there is figurative and literal
+
+“distance” between the two figures. She seems to be aware that her presence has garnered
+
+his attention, as she kicks up her skirts in forward motion and modestly holds her arms
+
+against her chest. Her identity is also unclear; she could be a prostitute just as much as she
+
+could a woman of society. The bold brushwork and dark palette make it difficult to
+
+determine whether her garments are elaborately layered or simply tattered.</p>
+<p>In regards to the two males, their bodies are hidden beneath masses of black
+
+cloth—only the eyes of one of the men are distinguishable. The shadowy figures brood
+
+against the wall. The one peers from atop his collar and shoots a piercing glance, creating a
+
+cryptic, sexually charged tension. This tension is both between the woman and the man, as
+
+it is between the viewer and the scene. Sargent paints this encounter as personal and
+
+informal, thus making the viewer an intruding viewer. Furthermore, the three dark-hued
+
+main figures stand in stark contrast to the light grey and white walls. This emphasizes the
+
+personal aspect of the painting which only heightens the viewer’s sense of voyeurism.
+
+Venice’s inherent mysterious eroticism enhances the suggestive sexuality of this encounter.
+
+Sargent further capitalizes on Venice’s characteristic ambiguity by painting the scene with
+
+a dark palette and voiding it of bright light.</p>
+
+       <p> Upon first glance, “A Street In Venice” appears as a snapshot of mundane Venetian
+
+life. However without prior knowledge, the viewer is not likely to know that Sargent
+
+employed models for this painting and that this is a staged scene. Sargent may have created
+
+the ambiguous and mysteriously sexual relation between the man and the woman to
+
+represent his own anxieties about his sexuality and its place in society. Fairbrother
+
+speculates, “if indeed Sargent balanced a public career with a repressed sexuality, his
+
+conflicted social-sexual identity may be a key to the successful tensions within his art”
+
+(John Singer Sargent: The Sensualist 140). Additionally, his concerns about personal
+
+privacy are reflected in the sense of uncomfortable voyeurism that the viewer is likely to
+
+feel when peering into this narrow corridor.</p>
+
+<p>“A Street In Venice,” along with other works from Sargent’s first Venice period,
+
+was not received well by critics when exhibited in Paris in 1882. However, I must think
+
+that this was not a complete surprise to Sargent. These were painter’s paintings. I believe
+
+that Sargent had not crafted them with a specific audience in mind, as these works were of
+
+a more personal nature. Most Sargent scholars concur that there is a strong likelihood that
+
+many of Sargent’s Venice works were created as an almost entirely private pursuit with no
+
+intention of being displayed or circulated. To the 19th century art critic, “A Street In
+
+Venice” would likely have been dismissed for its “unidealized images of workers and
+
+bohemians” (Maine 31). Not all of Sargent’s Venice works are of this nature. However,
+
+many of his Venetian subject paintings depict similar expressions of mysterious sexuality
+
+and private intimacy such as “An Interior In Venice.” Painted in 1898, “An Interior In Venice” is an oil on canvas family portrait of the
+
+Curtises who resided in the Palazzo Barbaro on the Grand Canal. When in Venice, Sargent
+
+often stayed there as he was a distant relative. As an expression of his gratitude for their
+
+gracious hospitality, he presented it to the matriarch, Ariana Curtis, as a gift. She rejected
+
+the completed work on the grounds that it made her look too old and that it portrayed her
+
+son in an indecorous manner. One can only wonder about Sargent’s intentions. Given his
+
+relationship to the Curtises, I believe that it was not his intention to offend them, as they
+
+housed him as a cherished guest for all these years. We can be sure that Sargent admired
+
+his own work, for he used it as the diploma painting into the Royal Academy. What then
+
+were the motivating forces behind the work?</p>
+
+<p>Just as “A Street In Venice” was a private encounter, it is possible that Ariana felt
+
+that this too was an invasion of her privacy. The family dynamics as represented in this
+
+painting may not have been something that she wished to have broadcasted to the world.
+
+The eye first approaches Ariana and her husband in the foreground. He, sitting next to her,
+
+ignores her as he is engulfed in his folio. The light coming from the window spills onto the
+
+bright white folio, immediately carrying the eye up to the unnerving, almost pained, face of
+
+Ariana. With slightly parted lips, she holds an uncomfortable gaze with the viewer. Her
+
+skirts overflow the painting’s border, invading our space. Similarly, we, as the intruding
+
+viewer, are invading her space. The Curtises are simply sitting for tea, and Sargent makes
+
+the viewer keenly aware that we are looking into something raw, honest, and slightly
+
+awkward.</p>
+
+<p>This scene is set in the Grand Salon of the Palazzo Barbaro, which is famous for
+
+its ornate, extravagant beauty. However, in this painting the large back wall is darkened to the point where the detail is not visible, and only the faint outline of picture frames
+
+remains. This is a deliberate choice by Sargent, and as it focuses the attention onto the
+
+people, a sense of drama seems to be unfolding, further making this a scene of immense
+
+intimacy. Whereas the element of constructed reality in “A Street In Venice” is achieved
+
+through the use of models, “An Interior In Venice” goes about it differently. The
+
+imaginative construction comes from the way that Sargent uses the Curtises for his own
+
+purpose, rather than simply as a subject of a family portrait. His artistic license is
+
+highlighted in that the Curtis’s (i.e Ariana’s) expectations for the portrait did not align with
+
+the intentions of Sargent. Just like the glancing man in “A Street In Venice,” Ariana Curtis
+
+gives a challenging look to the viewer, letting us now know that she does not want to be
+
+seen.</p>
+
+<p>Sargent segments the two pairs of relationships which highlights their stark
+
+contrast. In the background, Ralph and his young wife interact. He seems to be flirting with
+
+her, and she casts her eyes down at the tea she is pouring, bashfully embarrassed by his
+
+clear affection and attention. The young couple’s youth and gaiety are juxtaposed against
+
+the older couple’s aged disinterest in one another. Perhaps it is this generational difference
+
+that was displeasing to Ariana, as it broadcasts the clear difference between the natures of
+
+the two relationships. Not only are the two couples juxtaposed, but also within the two
+
+couples there is a rift. Ariana and her husband suffer from apathy and complacency,
+
+whereas in the younger couple there is an imbalance between Ralph’s overzealous affection
+
+and his wife’s reservedness. There are many sets of opposition in this painting: the dark
+
+back wall and the white figures, the flatness of that spectacularly ornate wall and the angled
+
+form of the people, and the close quarters of the interior and the invading light of the
+
+exterior. Henry James, whose Venetian novels explore similar themes of intimacy and
+
+privacy, particularly enjoyed this work. Janis notes, “It is a tribute to the successful
+
+expression of the picture’s underlying emotional tension that is was a favorite of Henry
+
+James’s” (186). The juxtapositions of this painting emphasize such emotional tension and
+
+psychological dynamics within the individuals, the pairs, and the family as a whole.
+
+Just as Sargent created Venetian scenes on canvas to express deeper motivations
+
+of his spirit, Twain performed similarly on the page. By the time of Twain’s Venetian
+
+travels, he had already established himself as a rising humorist. Part of his success was
+
+from his comical accounts of his travels to the Sandwich Islands. Twain capitalized on their
+
+popularity by embarking on a lecture tour in which he told stories from his travels. Having
+
+seen great success from both the reports and the lecture tour, Twain set out on a second
+
+excursion. He was commissioned by a San Francisco newspaper to produce a similar series
+
+of reports, however this time he was to venture throughout Europe with the goal of ending
+
+up in the Holy Land. Published in 1869, “Innocents Abroad” was more often referred to by
+
+Twain as his “Great Pleasure Excursion,” which perfectly reflects the comedic undertone of
+
+his traditionally formatted travelogue.</p>
+
+<p>While Sargent’s motivations for his Venetian art can be traced to the inner
+
+machinations of his persona, Twain’s are a bit more surface level and career orientated. His
+
+American audience had responded quite favorably to the ways in which he playfully
+
+derided the culture and society of the Sandwich Islands. Unlike Sargent, Twain was
+
+supremely aware of and concerned with his readership. That is because he knew that it
+
+would be the praise and positive reception of his work by them that would continue to
+
+catapult him to fame. For Twain, his deeper purposes for constructing Venetian “realities”
+
+was largely in part to please his growing readership of middle class Americans.
+
+The interesting overlap between Sargent and Twain’s work is how they both used
+
+their imaginative constructions to create Venetian “realities” in different ways. For Twain,
+
+he employed the power of imaginative humor to create his own elastic models of reality to
+
+humor his audience. When reading the Venetian chapters of “Innocents Abroad,” even the
+
+19th century reader would have been aware that Twain’s stories are absurd and unlikely
+
+true. Why, then, does Twain fabricate Venice for the reader? Covici offers his take, “To
+
+Mark Twain, humor—originally, perhaps, an end in itself—became a tool, a technique, for
+
+the artist; it became a means to a variety of ends which have in common the clarification of
+
+a reader’s vision of himself and of the nature of the society, and of the cosmos, around
+
+him” (vii-viii). While Twain obviously was trying to gain popularity, there is substantial
+
+social commentary in all of his work that confronts and challenges the fears and
+
+insecurities of Americans. As I have not read Twain’s accounts of the other destinations on
+
+the trip, I cannot comment on how Venice compares to those. However what I can analyze
+
+is how Venice and her inherent qualities provided a setting that lent itself so suitably to
+
+Twain’s aforementioned exploits.</p>
+
+<p>A large part of Twain’s anti-romantic and anti-sentimentalist efforts are directed
+
+at debunking European glory. Where else is such an endeavor more suitably executed than
+
+in the city in which the past and present are so delicately inter-mingled? This temporal
+
+ambiguity is a theme that draws biting mockery from Twain, “Her glory is departed, and
+
+with her crumbling grandeur of wharves and palaces about her she sits among her stagnant
+
+lagoons, forlorn and beggared, forgotten of the world...A peddler of glass beads for women, and trifling toys and trinkets for school-girls and children” (217). By emphasizing this
+
+tragic reversal, he undercuts European snobbery, thus assuring his readership that they have
+
+nothing to be intimidated by.  </p>
+
+<p>Twain further challenges the Old World’s traditions and beliefs by reflecting on
+
+the falsehood of American stereotypes of Venice. Twain partakes in a different kind of
+
+spatial play than Sargent as he emphasizes the disparity between idealized perceptions of
+
+Venice from afar and her truly ugly nature up close. He sarcastically mocks the venerable
+
+St. Mark’s, “Of course we went to see the venerable relic of the ancient glory of Venice,
+
+with its pavements worn and broken down by the passing feet of a thousand years of
+
+plebeians and patricians-- The Cathedral of St. Mark” (225). Additionally, through the
+
+ironical understatement of litotes, Twain calls its Byzantine architecture “unlovely,” further
+
+emphasizing his critical reception of the city. Furthermore, in one of the most falsified
+
+scenes of the chapter, Twain interacts with his “caterwauling” gondolier Roderigo
+
+Gonzales Michael Angelo. He laments, “It is enough that my cherished dreams of Venice
+
+have been blighted forever as to the romantic gondola and the gorgeous gondolier; this
+
+system of destruction shall go no farther” (218). After a lengthy episode of berating the
+
+gondolier, Twain does not even afford him a response. Twain is completely in charge of
+
+creating Venice for his readers.</p>
+
+             <p>  However, Twain’s account of Venice is not one-dimensional. Not only does he
+
+undermine Venetian and European glory, he also derides the American tourist abroad, “The
+
+gentle reader will never, never know what a consummate ass he can become, until he goes
+
+abroad. I speak now, of course, in the supposition that the gentle reader has not been
+
+abroad, and therefore is not already a consummate ass” (233). Twain confronts the notion
+
+that the American abroad has an uncontrollable desire to absorb the culture of Europe in
+
+some pitiful attempt to gain status and pride. Similarly, he mocks the fake cultural
+
+appropriation that Americans exhibit when abroad. He illustrates a hotel registry in which
+
+Americans such as Monsieur Gor-r-dong have signed their names and apparently
+
+“forgotten” how to write it in English (223). In this instance, I think he is commenting on
+
+how Americans have an inherent inferiority complex to Europeans who are able to claim a
+
+more illustrious, cultured past. Twain does not tip toe around the fears and insecurities of
+
+Americans. Would his readership have found this self-deprecating material comical or
+
+slightly offensive? I imagine the former, for through the use of humor balanced with
+
+European mockery, these insecurities are not as unnerving for his audience to encounter.
+
+Through this imaginative humor, Twain creates a Venice that both entertains his audience
+
+while also encouraging them to question the nature of their society.
+
+Throughout the semester we have studied how artists use Venice as a setting for
+
+their work. However, we have seldom explored past the surface of these artists’ lives. “A
+
+Street In Venice,” “An Interior in Venice,” and “Innocents Abroad” are three examples of
+
+how deeper analysis the personae of the artists can illuminate intentions and meaning that
+
+would’ve otherwise been lost. Furthermore, the answer to “why Venice?” is greatly
+
+enhanced when considering the motivating forces of Sargent’s spirit and the audience of
+
+Twain. By thinking critically about just how real their Venetian “realities” are, the complex
+
+purposes behind the art and the artist are revealed.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -1175,13 +1698,343 @@ body {
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>Emperor Hadrian and Rabbi Akiba</h2>
+                            <p class="item-intro text-muted">A discussion of the two contemporaries</p>
+                            <ul class="list-inline">
+                              <li>Date: March 2015</li>
+                              <li>By: Giuliana</li>
+                            <img class="img-responsive img-centered" src="https://static1.squarespace.com/static/5126bbb4e4b08c2e6d1cb6e4/t/51748751e4b084de2911822e/1366591321194/Hadrian.jpg" alt="">
+                            <p>During the reign of Emperor Hadrian from 117-138 CE, the Roman Empire may
+
+have seemed like a singular entity on the surface. But looking past that façade, one can
+
+see a variety of unique and thriving peoples trying to negotiate with the larger power.
+
+Specifically, this reign marked a clash between the Jews and the Romans in Judaea.
+
+Akiba, the leading Rabbi at the time, championed the Jewish cause as he focused on
+
+ensuring a thriving study of Torah. Similarly, Hadrian attempted to unite the Roman
+
+Empire without the deafening blow of uniformity. Traditionally, scholarship has focused
+
+on each man separately. Yet they were contemporaries, who did not simply exist on the
+
+margins of each other’s distant horizons, but rather, were prominent forces within each
+
+other’s worlds. One can only wonder: if they had met, how might they have presented
+
+their convictions to each other? In this paper, I propose to examine how their views
+
+shaped the realities in which they inhabited. In so doing, two different worlds are
+
+revealed: the Roman and the Jewish.</p><p> At the beginning of Akiba’s scholarship in 69, the cultural environment of Judaea
+
+was in flux between two bipolar entities: the patricians and the plebeians. While there
+
+were many inequalities between these groups, the one that had the most influence in
+
+regards to Akiba’s life was the disparity of classes’ influence upon the study of Law (94).
+
+The establishment of the academy at Yabneh addressed this disparity. Granted by Roman
+
+Emperor Vespasian in 68, Yabneh’s creation by Johanan ben Zakkai represented the
+
+changing tide of Judaism, often being described as “true Sanhedrin of all Israel” (69). The
+
+conditions were prime for Akiba to exercise the primary function of his life, rabbinic
+
+scholarship, in a place teeming with a selfless love for God and Torah.
+
+Though, Yabneh housed a mosaic of Jewish thought, which created a tension
+
+between plebeian and patrician interpretation of law. Gamaliel, the patrician head of the
+
+academy, represented this strife as his strict and conservative exegesis was purported to
+
+speak for the people as a whole (115). The plebeian opinion soon became
+
+undistinguishable amidst the dominant banter. Though after a sequence of challenges to
+
+this established authority, Akiba proved his rabbinic superiority and Yabneh became a
+
+place for the plebeian agenda to be addressed (127). This “reconstruction of the Law”
+
+that Akiba was spearheading represents the new course of Judaism, which eventually led
+
+to the foundation of current day Reformative Judaism (135). No longer an aristocracy,
+
+Yabneh was now a nomocracy, with Akiba deciding the nomos (custom, law) that their
+
+studies should follow. These chosen guidelines for study contributed the Torah’s future
+
+relevance, as Akiba claimed to serve a higher cause than literal exegesis—that being the
+
+cause of human happiness (174). He recognized the futility of the Written Law tradition.
+
+The fluid nature of Oral Law would allow Judaism to be applicable in future times as
+
+“human happiness” is a perpetual human goal (155). Akiba’s revolutionary course of
+
+rabbinic scholarship produced the codified Mishna, which continues to be recalled today
+
+(157). Though, this part of Akiba’s goal was the easier of the two, as it only involved
+
+matters within his country.</p><p>
+
+As the presence of Hellenism was becoming more and more pervasive in Judaea,
+
+it manifested itself, in its purest form, as an impediment upon the study of Law (260). In
+
+hopes of working effectively with power, Akiba boiled down his agenda to one, singular
+
+item that would save Judaism from extinction. All he asked of the world was the
+
+opportunity for a thriving culture of Rabbinic scholarship (257). The Jewish historian
+
+Josephus notes this common fervor among rabbinic scholars in contrast to the harsh
+
+opposition that was eventually presented by the Romans. Akiba knew that the Jewish
+
+position was insignificant, so he attempted to negotiate with Roman power in the best
+
+way he could. He did not want autonomy, or relief from the annual tribute-- only the
+
+chance for his monotheistic religion to function through study. For as Judaism is a system
+
+of knowledge “of God and His Law”, its survival depended on its maintenance of
+
+scholarship (260). Though to the Romans, Akiba’s seemingly small request was the most
+
+dangerous threat to the Empire’s goals at the time.</p><p>
+
+Since Judaea existed as a miniscule province within the vast Roman Empire, the
+
+environment of that relationship largely determined the success of Akiba’s efforts towards
+
+the Torah’s salvation. To provide context for Hadrian’s reign beginning in 117, the period
+
+from 95 to 117 illustrates the Jewish position going from moderate to worse. Hadrian’s two
+
+predecessors, Nerva and Trajan, began the era of the Five Good Emperors, for Rome that is
+
+(153). Under Nerva, the client relationship appeased both parties, as depicted by that
+
+generation’s coinage bearing “Fisci Judaici Calumnia Sublata,” meaning that there were no
+
+more malicious Jewish taxes (153). Also at the time, the policy of the Jews towards Rome
+
+was producing mutually beneficial results. The plebeians of Jerusalem were opposed to
+
+aggressive wars against weaker neighbors, and favored submission to the powerful
+
+imperialist states (199). To the Romans, the Jews initially existed as a marginal population.
+
+To the Jews, the Romans were allowing them to freely study and practice, and as that was
+
+the essence of their lives, they were content. It is to be expected that this fostered a sense of
+
+hope in Judaea, possibly even for the rebuilding of the Temple, having been destroyed only
+
+a couple decades prior (217). It wasn’t until Trajan’s promise for a new Temple was
+
+revoked that the tensions began to rise. A new ethos was created among Jewish
+
+nationalists, who now felt encouraged that they could achieve a victory as memorable as
+
+that of the Hasmoneans (228). Because the Jews now presented this rebellious insult to
+
+Rome, Trajan’s policy of kindness turned to repression (234). Soon after, Trajan died,
+
+leaving the throne, and a shaky client relationship, to Hadrian.<p><p>
+
+In the 13 years before Hadrian’s first direct encounter with Judaea in 130, his reign
+
+was that of a golden era of tranquility. A large part of this peace was due to Hadrian’s
+
+promotion of a duel culture of worship. First existed the cult of emperor worship (42). In
+
+referring to himself as Hadrian Augustus, a clear connection was established between the
+
+revered founder of the Empire and the man who was in a sense refounding it (46). Part of
+
+this peace and prosperity came from the fact that Hadrian’s religious and spiritual policies
+
+were initially only directly forced upon the polytheists of his empire. Because of this, the
+
+state cult did not present itself as a major offense to said subjects (40). Though, Hadrian
+
+recognized that “all this dry machinery” of the emperor cult was not enough (42). The
+
+second part of the worship culture is that of the cult of the goddesses Roma and Venus
+
+(42). To his happiness, this cult grew popular largely due to its publicly attractive nature:
+
+temples, statues and worship sites were erected throughout the empire, notably, the
+
+Pantheon (42). The promoted Roman gods as well as the divine Hadrian were meant to
+
+create “common denominators of citizenship” throughout the Empire (42). This goal was
+
+achieved, either by genuine success of the polytheist inhabitants of the Empire, or by
+
+feigned success in fear of powerful retribution if they denied worship. The exception to this
+
+harmonious unity would present itself upon Hadrian’s trip to Judaea.<p><p>
+
+As a complement to this network of worship, Hadrian propagated a culture of
+
+mystery cults. In the east, they had taken hold. The cults provided the individual with the
+
+emotional comfort that the state cult lacked (103). As evidenced in Apuleius’s narrative of
+
+the Golden Ass, the worshipper developed a close personal relationship with the god, and
+
+was offered explanations of the universe, redemption from evil, and eternal salvation of the
+
+soul (103). Hadrian’s empire was being introduced to a new ethereal energy that was not to
+
+be easily accepted by every inhabitant. Participation in such cults allowed the individual to
+
+transcend the mundanity of daily life, as is what occurred during Hadrian’s visit to Athens
+
+in 128 (106). Upon experiencing the Mysteries of Eleusis here, a spiritual fever was
+
+instilled in the emperor, thus aiding him to conceive his next daring gestures to focus the
+
+loyalties and imaginations of the Greeks (106). This personal change would soon reflect a
+
+grand change in the Empire’s culture. It compelled Hadrian to leave the familiar terrain of
+
+Rome and Athens in a most vigorous attempt to revive Greek civilization throughout the
+
+provinces (107). The same Hellenism that was a threat to the Jewish existence was starting
+
+to become a key element to Hadrian’s agenda. Though, that is not to say that the seductive
+
+nature of Hellenism did not appeal to some of Judaea’s inhabitants. While Josephus notes
+
+that many a Jew could be spotted strolling to the local γυμνάσιον (gymasion), majority of
+
+them felt compelled to maintain a pious allegiance to the covenant.</p><p>
+
+The provinces needed to be drawn together in peace. Ideally each province would
+
+become a unique tile in the larger Roman mosaic. He understood the benefit of retaining
+
+the Greco-Roman tradition that was common to them all, thus authenticity was preserved
+
+and semi-autonomy granted. But, how does a Roman Emperor balance unity without
+
+uniformity? The answer lay in the notion that there must be one common thread, and for
+
+Hadrian, that was a universal polytheism. Every inhabitant, whether an Egyptian
+
+worshipping Isis and Osiris, or a Greek venerating a different pantheon of gods, exercised
+
+a polytheistic reverence, thus acting as a leveling agent across the Empire (116). Also, the
+
+widespread paganism allowed for participation in the state cult, which was crucial for
+
+Roman patriotism (117). Hadrian was not presenting an issue for his Empire’s
+
+polytheists—only a minor nuisance at most. It was the monotheists of the empire who
+
+stood directly in the way of Hadrian’s pursuits.</p><p>
+
+It is now that the resulting irony of this conflict takes its roots: Hadrian’s policies,
+
+while intending to create a stronger Rome, would have the unintended result of marking the
+
+beginning of the rise of Christianity at the expense of polytheism. For the Jews, their
+
+reaction to such policies marks the foundations of modern Judaism that is rooted in the
+
+Diaspora. Judaea had always remained restless during the Empire, for the Romans could
+
+never establish a satisfactory compromise with Jewish political hopes and religious
+
+customs. Upon visiting Antioch, Hadrian witnessed this turbulent ferment of cultures and
+
+an undercurrent hostile to Rome. Judaea was undermining Hadrian’s efforts through their
+
+arrogant separatism, and it became readily apparent that their refusal to assimilate
+
+represented the largest roadblock to the Empire’s successful panhellenic unity (111).
+
+In Spartianus’ Historia Augusta he cites the origins of the first Jewish revolt as a
+
+response to Hadrian’s ban on circumcision. Advocates of this theory refer to the Hellenic
+
+“enlightened” attitude of the emperor, as circumcision seemed a grossly barbaric custom to
+
+him. Though in an account by Cassius Dio, Hadrian’s intention to refound Jerusalem as a
+Roman colony with pagan temples is attributed to the rebellion. It is only understandable
+
+that Jews were driven to action because they feared a dissolution of the Mosaic Covenant
+
+by the prevalence of these pagan customs in Judea.</p><p>
+
+After this initial rebellion in 132-135, the Jews waged a disastrous was against the
+
+Roman Empire. Upon massacring and enslaving their people, Hadrian banned Jewish
+
+residence in Jerusalem, which was resettled and renamed Aelia Capitolina, adorned with a
+
+temple to Jupiter. From this point onward Judaism turned ever more away from Greco-
+
+Roman culture. Though, it is also from this point onward that modern Judaism has its roots
+
+in the following Diaspora. They were scattered through out the world, without their
+
+prominent base in the Holy Land, and yet managed to survive even if they did so as a
+
+marginalized people. They were studying the same Mishna produced from this era, thanks
+
+to Akiba.</p>
+
+<p>To many of the inhabitants of the Empire, this final Jewish action presented itself as
+
+a seemingly “unnecessary” and violent rebellion in the distant land of Judaea, and this
+
+perception cast a negative light on the Jews. This is evident in Eusebeius’ Ecclesiastical
+
+History, as he notes that the instigator of the rebellions had suffered Hadrian’s “just
+
+punishment” (6.3). Becoming cognizant of this new social mood, the early Christians, who
+
+were still linked with these people to some degree, would attempt to distance themselves
+
+from the Jewish cause, thus ending Jewish and Christian competition. Here begins some of
+
+the initial tears in the schism between the two peoples of the Book. Again, many an irony
+
+exists in Hadrian’s policies, as they planted the early seeds of a rising Christianity, which
+
+would eventually overcome the empire.</p><p> The final war between the Jews and the Romans stands as a collision of two
+
+distinct civilizations, one monotheistic, the other polytheistic, embodied by two men,
+
+Hadrian the philhellene and Akiba the father of rabbinic Judaism. These men’s goals
+
+were so closely tied to their persons: Hadrian would stop at nothing to unite his empire,
+
+especially for this tiny monotheistic threat in his polytheistic world. Akiba would never
+
+stop studying and respecting Torah, eventually entering martyrdom. It is even said that
+
+after being imprisoned by the Romans, upon being given a minimal drink of water to curb
+
+his starvation, he doused his hands and feet with it, as Torah sanctions the cleansing of
+
+hands before eating or drinking. Their pursuits encapsulated every essence of their
+
+beings: Hadrian was Graeculus, and Rabbi was not just a title for Akiba, but an identity.
+
+Neither individual was willing to budge, even a bit, for to budge was to not only to
+
+compromise the integrity of their nation’s cause, but it was to lose a part of themselves.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
                     </div>
                 </div>
