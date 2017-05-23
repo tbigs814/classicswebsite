@@ -345,6 +345,13 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
+section h4.section-subheading {
+  margin-top: 0;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
 @media(min-width:768px) {
     section {
         padding: 150px 0;
@@ -355,7 +362,7 @@ section h3.section-subheading {
     margin: 15px 0;
     text-transform: none;
 }
-
+/*
 .carousel-caption {
   font-size: 50px;
 }
@@ -363,7 +370,7 @@ section h3.section-subheading {
 .carousel-caption h3{
   font-size: 100px;
   vertical-align: top;
-}
+}*/
 
 
 
@@ -443,23 +450,6 @@ section h3.section-subheading {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
-}
-
-.figure {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.figure img {
-    margin: 0 auto;
-    border: 7px solid #fff;
-}
-
-.figure h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-    padding-bottom: 20px;
 }
 
 
@@ -555,7 +545,7 @@ ul.hear-buttons {
     margin-bottom: 0;
 }*/
 
-/*----------Quote buttons-------------*/
+/*----------CSS for Quote Generator Section-------------*/
 ul.hear-buttons li a {
     display: block;
     width: 200px;
@@ -572,8 +562,40 @@ ul.hear-buttons li a:hover{
     background-color: #E43A14;
 }
 
+.quote-text {
+  font-family: Papyrus, fantasy;
+  font-size: 25px;
+  color: black;
+}
 
+.image-cropper {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
 
+.image-cropper img {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.person {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.person h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+    padding-bottom: 20px;
+}
+
+/*------------CSS for portfolio section-----------------*/
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -883,7 +905,7 @@ body {
         <div class="carousel-caption">
           <h3>Chicago</h3>
           <p>Thank you, Chicago!</p>
-          <button>Button</button>
+          <!--<button>Button</button>-->
         </div>
       </div>
 
@@ -917,44 +939,52 @@ body {
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Quote Generator</h2>
-                    <h3 class="section-subheading text-muted">Hear from the legends</h3>
+                    <h4 class="section-subheading text-muted">Hear from the legends</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="figure">
-                        <img src="http://cdn-0.mrdowling.com/images/701pericles.png" class="img-responsive img-circle" alt="">
+                      <div class="image-cropper">
+                        <img src="http://cdn-0.mrdowling.com/images/701pericles.png" class="rounded" alt="">
+                      </div>
+                      <div class="person">
                         <h4>Pericles</h4>
-                        <ul class="list-inline hear-buttons">
-                            <li><a href="#">Hear from Me</i></a>
+                        <ul class="list-inline hear-buttons" onclick="getquote()">
+                            <li><a>Hear from Me</a>
                             </li>
                         </ul>
-                    </div>
+                      </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="figure">
+                    <div class="image-cropper">
                         <img src="https://media1.britannica.com/eb-media/69/75569-004-3B260631.jpg" class="img-responsive img-circle" alt="">
+                    </div>
+                    <div class="person">
                         <h4>Socrates</h4>
-                        <ul class="list-inline hear-buttons">
-                            <li><a href="#">Hear from Me</i></a>
+                        <ul class="list-inline hear-buttons" onclick="getquote()">
+                            <li><a>Hear from Me</a>
                             </li>
                         </ul>
                     </div>
-                </div>
+                    </div>
+
                 <div class="col-sm-4">
-                    <div class="figure">
-                        <img src="http://dante.udallas.edu/hutchison/images/Gods/athena.jpg" class="img-responsive img-circle" alt="">
+                    <div class="image-cropper">
+                        <img src="http://dante.udallas.edu/hutchison/images/Gods/athena.jpg" class="img-circle" alt="">
+                    </div>
+                    <div class="person">
                         <h4>Athena</h4>
-                        <ul class="list-inline hear-buttons">
-                            <li><a href="#">Hear from Me</a>
+                        <ul class="list-inline hear-buttons" onclick="getquote()">
+                            <li><a>Hear from Me</a>
                             </li>
                         </ul>
+                    </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="quote-text" id="demo"></p>
                 </div>
             </div>
         </div>
@@ -1221,6 +1251,33 @@ body {
 </html>
 
 <script>
+  /*-------------quote generator code----------------*/
+  var quotes = new Array();
+
+  quotes[0] = "Just because you do not take an interest in politics doesn't mean politics won't take an interest in you.";
+  quotes[1] = "What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.";
+  quotes[2] = "Time is the wisest counsellor of all.";
+  quotes[3] = "Freedom is the sure possession of those alone who have the courage to defend it.";
+  quotes[4] = "Having knowledge but lacking the power to express it clearly is no better than never having any ideas at all.";
+  quotes[5] = "For famous men have the whole earth as their memorial.";
+  quotes[6] = "Wait for that wisest of all counselors, Time.";
+  quotes[7] = "you're a lil fatty giuliana";
+
+  var prediction;
+
+  window.onload = function(){
+    prediction = document.getElementById("demo");
+  }
+  function getquote(){
+    ind = Math.floor(Math.random() * 8);
+    console.log(ind);
+    prediction.innerHTML = quotes[ind];
+  }
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Whatsup";
+  }
+  /*-----------End quote generator code----------------*/
+
   $(function() {
       $('a.page-scroll').bind('click', function(event) {
           var $anchor = $(this);
