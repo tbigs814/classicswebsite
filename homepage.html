@@ -1,23 +1,16 @@
 <html>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
 <!-- Bootstrap Core JavaScript
 <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>-->
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <style>
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
 
 body {
     overflow-x: hidden;
@@ -214,7 +207,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    background-color: black;
+    background-color: white;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -223,7 +216,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fff;
+    background-color: #222;
 }
 
 .navbar-default .nav li a {
@@ -433,6 +426,7 @@ button[type="buttonpost"]:hover{
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+    color:white;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -731,12 +725,31 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 40%;
+    width: 100%;
+    height: 33%;
     border-radius: 5px;
+    background-color: #ff5733;
+    box-shadow: 0 10px 14px 0px rgba(0,0,0,0.2);
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 20px 18px 10px rgba(0,0,0,0.2);
+}
+
+.card-content h4{
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card-caption h4{
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;\
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 </style>
@@ -751,6 +764,7 @@ body {
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -772,8 +786,8 @@ body {
                     <li class="">
                         <a class="page-scroll" href="#quotes">Quote Generator</a>
                     </li>
-                    <li class="">
-                        <a class="page-scroll" href="#contact">Blog</a>
+                    <li class="active">
+                        <a class="page-scroll" href="#blog">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -804,26 +818,23 @@ body {
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-tree-conifer"></i>
+                        <i class="glyphicon glyphicon-book"></i>
                     </span>
-                    <h4 class="service-heading">Here is a pokok</h4>
-                    <p class="text-muted">Second</p>
-                </div>
-                <div class="col-md-4">
+                    <h4 class="service-heading">Classical knowledge</h4>
+                    <p class="text-muted"></p>
+                    <div class="space"></div>
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-heart"></i>
+                        <i class="glyphicon glyphicon-floppy-disk"></i>
                     </span>
-                    <h4 class="service-heading">Here's a heart</h4>
-                    <p class="text-muted">Third</p>
+                    <h4 class="service-heading">Straight to your computer</h4>
+                    <p class="text-muted"></p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-tint"></i>
-                    </span>
-                    <h4 class="service-heading">Waterfall maybe?</h4>
-                    <p class="text-muted">Fourth</p>
+                    <h4 class="service-heading">My goal is to.................................................... .               . . . . . . . ........................... .. ............................. . . .........................</h4>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/17951501_1661030450579127_9027882306161272133_n.jpg?oh=785bd179a6182d6bee8fcbe8e9da6868&oe=59A0D7E2" alt="" style="width:100%; height:auto">
                 </div>
             </div>
         </div>
@@ -935,14 +946,13 @@ body {
             </div>
         </div>-->
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
+
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
 
-            <!-- Wrapper for slides -->
             <div class="carousel-inner">
 
               <div class="item active">
@@ -950,7 +960,7 @@ body {
                 <div class="carousel-caption">
                   <h3>Important Ancient Sentiments</h3>
                   <p>A brief discussion of Plato Phaedrus section 274c5-275b2</p>
-                  <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                  <a href="#post1" class="portfolio-link" data-toggle="modal">
                     <button type="buttonpost">View</button>
                   </a>
                   <div class="space"></div>
@@ -963,7 +973,7 @@ body {
                 <div class="carousel-caption">
                   <h3>Venetian “Realities:” The City as Space for Imaginative Constructions</h3>
                   <p>Discussion of dissonance between 19th Venetian art and reality</p>
-                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                  <a href="#post2" class="portfolio-link" data-toggle="modal">
                     <button type="buttonpost">View</button>
                   </a>
                   <div class="space"></div>
@@ -974,8 +984,8 @@ body {
                 <img src="http://jrrny.com/wp-content/uploads/journeys/jahangiralam758101/9e22f2add3eca28e0b68d6b84678532d.jpg" alt="post3" >
                 <div class="carousel-caption">
                   <h3>Emperor Hadrian and Rabbi Akiba</h3>
-                  <p>A discussion of the two contemporaries</p>
-                  <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                  <p>An examination of the two contemporaries</p>
+                  <a href="#post3" class="portfolio-link" data-toggle="modal">
                     <button type="buttonpost">View</button>
                   </a>
                   <div class="space"></div>
@@ -1025,7 +1035,7 @@ body {
                     </div>
                     <div class="person">
                         <h4>Socrates</h4>
-                        <ul class="list-inline hear-buttons" onclick="getquote()">
+                        <ul class="list-inline hear-buttons" onclick="getquote2()">
                             <li><a>Hear from Me</a>
                             </li>
                         </ul>
@@ -1034,11 +1044,11 @@ body {
 
                 <div class="col-sm-4">
                     <div class="image-cropper">
-                        <img src="http://dante.udallas.edu/hutchison/images/Gods/athena.jpg" class="img-circle" alt="">
+                        <img src="http://www.nndb.com/people/840/000087579/sopho-sm.jpg" class="img-circle" alt="">
                     </div>
                     <div class="person">
-                        <h4>Athena</h4>
-                        <ul class="list-inline hear-buttons" onclick="getquote()">
+                        <h4>Sophocles</h4>
+                        <ul class="list-inline hear-buttons" onclick="getquote3()">
                             <li><a>Hear from Me</a>
                             </li>
                         </ul>
@@ -1065,82 +1075,76 @@ body {
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <!--<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">-->
+                  <a href="#post1" class="portfolio-link" data-toggle="modal">
                         <div class="card">
-                            <h4>stuff</h4>
-                        </div>
-                      <!--  <img src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" class="img-responsive" alt="">
-                    </a>-->
-
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                            <div class="card-content">
+                                <h4>Important Ancient Sentiments</h4>
                             </div>
                         </div>
-                        <img src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" class="img-responsive" alt="">
+                      </a>
+                  <div class="card-caption">
+                      <h4>Post description</h4>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#post2" class="portfolio-link" data-toggle="modal">
+                        <div class="card">
+                          <div class="card-content">
+                            <h4>Venetian “Realities:” The City as Space for Imaginative Constructions</h4>
+                          </div>
+                        </div>
+                      <!--  <img src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" class="img-responsive" alt="">-->
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="card-caption">
+                        <h4>Post description</h4>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                    <a href="#post3" class="portfolio-link" data-toggle="modal">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Emperor Hadrian and Rabbi Akiba</h4>
                             </div>
                         </div>
-                        <img src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="card-caption">
+                        <h4>Description of post</h4>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                    <a href="#post4" class="portfolio-link" data-toggle="modal">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Title</h4>
                             </div>
                         </div>
-                        <img src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="card-caption">
+                        <h4>Post description</h4>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                    <a href="#post5" class="portfolio-link" data-toggle="modal">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Title</h4>
                             </div>
                         </div>
-                        <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="card-caption">
+                        <h4>Description</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#post6" class="portfolio-link" data-toggle="modal">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Title</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-caption">
+                        <h4>Description of Post</h4>
                     </div>
                 </div>
             </div>
@@ -1219,8 +1223,8 @@ body {
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Post 1 -->
+    <div class="portfolio-modal modal fade" id="post1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -1253,7 +1257,7 @@ body {
     </div>
 
     <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="post2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -1685,8 +1689,8 @@ purposes behind the art and the artist are revealed.</p>
         </div>
     </div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Post 3 -->
+    <div class="portfolio-modal modal fade" id="post3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -2141,6 +2145,8 @@ compromise the integrity of their nation’s cause, but it was to lose a part of
 <script>
   /*-------------quote generator code----------------*/
   var quotes = new Array();
+  var quotes2 = new Array();
+  var quotes3 = new Array();
 
   quotes[0] = "Just because you do not take an interest in politics doesn't mean politics won't take an interest in you.";
   quotes[1] = "What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.";
@@ -2149,7 +2155,23 @@ compromise the integrity of their nation’s cause, but it was to lose a part of
   quotes[4] = "Having knowledge but lacking the power to express it clearly is no better than never having any ideas at all.";
   quotes[5] = "For famous men have the whole earth as their memorial.";
   quotes[6] = "Wait for that wisest of all counselors, Time.";
-  quotes[7] = "you're a lil fatty giuliana";
+  quotes[7] = "Check out that squidge";
+
+  quotes2[0] = "An unexamined life is not worth living.";
+  quotes2[1] = "True knowledge exists in knowing that you know nothing.";
+  quotes2[2] = "To find yourself, think for yourself.";
+  quotes2[3] = "By all means marry: if you get a good wife, you’ll become happy; if you get a bad one, you’ll become a philosopher.";
+  quotes2[4] = "I cannot teach anybody anything, I can only make them think.";
+  quotes2[5] = "I know that I am intelligent, because I know that I know nothing.";
+  quotes2[6] = "Employ your time in improving yourself by other men's writings, so that you shall gain easily what others have labored hard for.";
+
+  quotes3[0] = "Nobody likes the man who brings bad news.";
+  quotes3[1] = "Success is dependent on effort.";
+  quotes3[2] = "The keenest sorrow is to recognize ourselves as the sole cause of all our adversities.";
+  quotes3[3] = "Wisdom is the supreme part of happiness.";
+  quotes3[4] = "To him who is in fear everything rustles.";
+  quotes3[5] = "Men of ill judgment oft ignore the good That lies within their hands, till they have lost it.";
+  quotes3[6] = "One word Frees us of all the weight and pain of life: That word is love.";
 
   var prediction;
 
@@ -2160,6 +2182,16 @@ compromise the integrity of their nation’s cause, but it was to lose a part of
     ind = Math.floor(Math.random() * 8);
     console.log(ind);
     prediction.innerHTML = quotes[ind];
+  }
+  function getquote2(){
+    ind = Math.floor(Math.random() * 7);
+    console.log(ind);
+    prediction.innerHTML = quotes2[ind];
+  }
+  function getquote3(){
+    ind = Math.floor(Math.random() * 7);
+    console.log(ind);
+    prediction.innerHTML = quotes3[ind];
   }
   function myFunction() {
     document.getElementById("demo").innerHTML = "Whatsup";
