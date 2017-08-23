@@ -1,4 +1,7 @@
 <html>
+<head>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -10,7 +13,7 @@
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <style>
-
+</head>
 
 body {
     overflow-x: hidden;
@@ -275,6 +278,37 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+/* Curl Top Right */
+.hvr-curl-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.hvr-curl-top-right:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  right: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(225deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before {
+  width: 25px;
+  height: 25px;
+}
+
 
 /*-----------------First Tile (Header) Style----------------*/
 header {
@@ -416,7 +450,7 @@ button[type="buttonpost"]:hover{
     margin: 0 auto;
     max-width: 400px;
 }
-
+/*
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
@@ -451,7 +485,7 @@ button[type="buttonpost"]:hover{
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
     margin: 0;
-}
+}*/
 
 #portfolio .portfolio-item .portfolio-caption {
     margin: 0 auto;
@@ -577,7 +611,7 @@ ul.hear-buttons {
     margin-bottom: 0;
 }*/
 
-/*----------CSS for Quote Generator Section-------------*/
+/*----------CSS for Quote Generator Buttons-------------*/
 ul.hear-buttons li a {
     display: block;
     width: 200px;
@@ -600,11 +634,11 @@ ul.hear-buttons li a:hover{
   color: black;
 }
 
+/*--------------quote generator image croppers-------------*/
 .image-cropper {
-    width: 300px;
+    width: auto;
     height: 300px;
     overflow: hidden;
-    border-radius: 50%;
     text-align: center;
     margin: 0 auto;
 }
@@ -615,7 +649,24 @@ ul.hear-buttons li a:hover{
     width: auto;
 }
 
+.image-cropper-circle {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.image-cropper-circle img {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+/*---------------------*/
+
 .person {
+    margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -1007,18 +1058,28 @@ body {
         </div>
     </section>
 
-    <!--Quote Generator-->
+    <!--Section Quote Generator-->
     <section id="quotes" class="lightbg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Quote Generator</h2>
+                    <h2 class="section-heading">Sententiae Antiquae</h2>
                     <h4 class="section-subheading text-muted">Hear from the legends</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                      <div class="image-cropper">
+                <div class="image-cropper">
+                  <img src="https://static1.squarespace.com/static/56c26d0220c64707756dbde9/t/56c2c1d1b654f95147ef7aa9/1455604190989/18217575-ancient-Greek-writing-chiselled-on-stone-Stock-Photo.jpg" alt="">
+                </div>
+                <div class="person">
+                  <ul class="list-inline hear-buttons" onclick="getquote()">
+                      <li><a>Hear from Me</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+              <!--  <div class="col-sm-4">
+                      <div class="image-cropper-circle">
                         <img src="http://cdn-0.mrdowling.com/images/701pericles.png" class="rounded" alt="">
                       </div>
                       <div class="person">
@@ -1030,7 +1091,7 @@ body {
                       </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="image-cropper">
+                    <div class="image-cropper-circle">
                         <img src="https://media1.britannica.com/eb-media/69/75569-004-3B260631.jpg" class="img-responsive img-circle" alt="">
                     </div>
                     <div class="person">
@@ -1043,7 +1104,7 @@ body {
                     </div>
 
                 <div class="col-sm-4">
-                    <div class="image-cropper">
+                    <div class="image-cropper-circle">
                         <img src="http://www.nndb.com/people/840/000087579/sopho-sm.jpg" class="img-circle" alt="">
                     </div>
                     <div class="person">
@@ -1053,9 +1114,9 @@ body {
                             </li>
                         </ul>
                     </div>
-                    </div>
+                  </div>-->
                 </div>
-            </div>
+
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="quote-text" id="demo"></p>
@@ -1075,7 +1136,7 @@ body {
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                  <a href="#post1" class="portfolio-link" data-toggle="modal">
+                  <a href="#post1" class="portfolio-link hvr-curl-top-right" data-toggle="modal">
                         <div class="card">
                             <div class="card-content">
                                 <h4>Important Ancient Sentiments</h4>
